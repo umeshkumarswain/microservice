@@ -6,14 +6,10 @@ namespace Authentication.DataAccess.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    private readonly AuthenticationDbContext _context;
     private readonly UserManager<IdentityUser> _userManager;
-    private readonly SignInManager<IdentityUser> _signInManager;
-    public UserRepository(AuthenticationDbContext dbContext,UserManager<IdentityUser> userManager,SignInManager<IdentityUser> signInManager)
+    public UserRepository(UserManager<IdentityUser> userManager)
     {
-        _context = dbContext;
         _userManager = userManager;
-        _signInManager = signInManager;
     }
     
     public async Task<User> CreateUser(User toCreate)
