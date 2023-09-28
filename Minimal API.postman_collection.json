@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "90e6b2d0-8fb6-4ec5-af19-09524f398416",
+		"name": "Minimal API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5557524"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetAllPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5094/api/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\":\"1\",\n    \"Content\":\"This is the first post.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5094/api/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "GetPosyById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5094/api/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		}
+	]
+}
