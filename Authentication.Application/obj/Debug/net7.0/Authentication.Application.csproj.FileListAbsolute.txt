@@ -1,0 +1,15 @@
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/bin/Debug/net7.0/Authentication.Application.deps.json
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/bin/Debug/net7.0/Authentication.Application.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/bin/Debug/net7.0/Authentication.Application.pdb
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.csproj.AssemblyReference.cache
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.AssemblyInfoInputs.cache
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.AssemblyInfo.cs
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.csproj.CoreCompileInputs.cache
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/refint/Authentication.Application.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.pdb
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/ref/Authentication.Application.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/bin/Debug/net7.0/Authentication.Domain.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/bin/Debug/net7.0/Authentication.Domain.pdb
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Application/obj/Debug/net7.0/Authentication.Application.csproj.CopyComplete

@@ -1,0 +1,11 @@
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/bin/Debug/net7.0/Authentication.Domain.deps.json
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/bin/Debug/net7.0/Authentication.Domain.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/bin/Debug/net7.0/Authentication.Domain.pdb
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.AssemblyInfoInputs.cache
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.AssemblyInfo.cs
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.csproj.CoreCompileInputs.cache
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/refint/Authentication.Domain.dll
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/Authentication.Domain.pdb
+/Applications/Apps/CQRS/Service.Authentication/Authentication.Domain/obj/Debug/net7.0/ref/Authentication.Domain.dll
