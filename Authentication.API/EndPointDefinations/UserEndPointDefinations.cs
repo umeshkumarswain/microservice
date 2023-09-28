@@ -3,6 +3,8 @@ using Authentication.Application.Features.User;
 using Authentication.Domain.Models.User;
 using MediatR;
 using Service.Authentication.Abstractions;
+using Service.Authentication.Filters;
+using Service.Authentication.Validator;
 
 namespace Service.Authentication.EndPointDefinations;
 
@@ -24,6 +26,6 @@ public class UserEndPointDefinations : IEndPointDefinations
                     createdUser
                 );
             }
-        );
+        ).AddEndpointFilter<ValidationFilter>();
     }
 }

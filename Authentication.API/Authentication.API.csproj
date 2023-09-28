@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.7.1" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
@@ -22,6 +23,8 @@
       <ProjectReference Include="..\Authentication.Application\Authentication.Application.csproj" />
       <ProjectReference Include="..\Authentication.DataAccess\Authentication.DataAccess.csproj" />
     </ItemGroup>
+
+
 
     
 
