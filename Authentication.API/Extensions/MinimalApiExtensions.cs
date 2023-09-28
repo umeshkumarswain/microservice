@@ -21,6 +21,7 @@ namespace Service.Authentication.Extensions;
                 .AddEntityFrameworkStores<AuthenticationDbContext>();
                 
             builder.Services.AddScoped<IPostRepository, PostRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddMediatR(
                 x => x.RegisterServicesFromAssemblies(typeof(CreatePost).Assembly)
             );
