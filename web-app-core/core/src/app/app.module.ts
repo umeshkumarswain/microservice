@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +6,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContentareaComponent } from './components/contentarea/contentarea.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { ContentareaComponent } from './components/contentarea/contentarea.compo
     LoginComponent,
     NavbarComponent,
     ContentareaComponent,
+    HeaderComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [AppRoutingModule, CommonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
