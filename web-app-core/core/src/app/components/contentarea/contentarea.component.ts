@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-contentarea',
   templateUrl: './contentarea.component.html',
-  styleUrls: ['./contentarea.component.css']
+  styleUrls: ['./contentarea.component.css'],
 })
-export class ContentareaComponent {
-
-}
+export class ContentareaComponent {}

@@ -9,7 +9,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContentareaComponent } from './components/contentarea/contentarea.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, LoginComponent, NavbarComponent, ContentareaComponent],
+  declarations: [
+    AppComponent,
+    SidebarComponent,
+    LoginComponent,
+    NavbarComponent,
+    ContentareaComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
