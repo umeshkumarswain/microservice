@@ -1,1 +1,15 @@
-<router-outlet></router-outlet>
+<div class="w-full h-full bg-gray-200">
+  <div class="flex flex-no-wrap">
+    <app-sidebar></app-sidebar>
+    <div class="w-full">
+      <!-- Navigation starts -->
+      <app-navbar></app-navbar>
+      <!-- Navigation ends -->
+      <!-- Remove class [ h-64 ] when adding a card block -->
+      <div class="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
+        <!-- Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border -->
+        <app-contentarea></app-contentarea>
+      </div>
+    </div>
+  </div>
+</div>
