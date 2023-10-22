@@ -4,9 +4,8 @@ using Authentication.Domain.Models;
 using MediatR;
 using Service.Authentication.Abstractions;
 
-namespace Service.Authentication.EndPointDefinations;
-
-
+namespace Service.Authentication.EndPointDefinations
+{
     public class PostEndPointDefinations : IEndPointDefinations
     {
         public void RegisterEndPoints(WebApplication app)
@@ -71,3 +70,4 @@ namespace Service.Authentication.EndPointDefinations;
 
       
     }
+}

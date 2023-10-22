@@ -1,7 +1,8 @@
-namespace Authentication.Domain.Models.User;
-
-public class User
+namespace Authentication.Domain.Models.User
 {
-    public string? Email { get; set; }
-    public string? PhoneNumber { get; set; }
+    public class User
+    {
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+    }
 }

@@ -1,8 +1,9 @@
 using Authentication.Domain.Models.User;
 
-namespace Authentication.Application.Abstractions;
-
-public interface IUserRepository
+namespace Authentication.Application.Abstractions
 {
-    Task<User> CreateUser(User toCreate);
+    public interface IUserRepository : IBaseRepository<User>
+    {
+        //Task<User> CreateUser(User toCreate);
+    }
 }

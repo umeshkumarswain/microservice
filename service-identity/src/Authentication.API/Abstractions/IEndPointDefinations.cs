@@ -1,6 +1,7 @@
-namespace Service.Authentication.Abstractions;
-
-public interface IEndPointDefinations
+namespace Service.Authentication.Abstractions
 {
-    void RegisterEndPoints(WebApplication app);
+    public interface IEndPointDefinations
+    {
+        void RegisterEndPoints(WebApplication app);
+    }
 }

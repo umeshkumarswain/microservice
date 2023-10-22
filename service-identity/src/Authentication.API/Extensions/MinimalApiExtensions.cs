@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Service.Authentication.Abstractions;
 using Service.Authentication.Validator;
 
-namespace Service.Authentication.Extensions;
-
+namespace Service.Authentication.Extensions
+{
     public static class MinimalApiExtensions
     {
         public static void RegisterServices(this WebApplicationBuilder builder)
@@ -24,7 +24,7 @@ namespace Service.Authentication.Extensions;
                 .AddEntityFrameworkStores<AuthenticationDbContext>();
                 
             builder.Services.AddScoped<IPostRepository, PostRepository>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             
             
             //Validators
@@ -54,3 +54,4 @@ namespace Service.Authentication.Extensions;
             }
         }
     }
+}

@@ -1,33 +1,15 @@
+using System.Linq.Expressions;
 using Authentication.Application.Abstractions;
 using Authentication.Domain.Models.User;
 using Microsoft.AspNetCore.Identity;
 
-namespace Authentication.DataAccess.Repositories;
-
-public class UserRepository : IUserRepository
+namespace Authentication.DataAccess.Repositories
 {
-    private readonly UserManager<IdentityUser> _userManager;
-    public UserRepository(UserManager<IdentityUser> userManager)
+    public class UserRepository : BaseRepository<User>, IUserRepository
     {
-        _userManager = userManager;
-    }
+        public UserRepository(AuthenticationDbContext context) : base(context)
+        {
     
-    public async Task<User> CreateUser(User toCreate)
-    {
-        var identityUser = new IdentityUser()
-        {
-            Email = toCreate.Email,
-            PhoneNumber = toCreate.PhoneNumber,
-            UserName = toCreate.PhoneNumber
-        };
-        var result = await this._userManager.CreateAsync(identityUser);
-
-        if (result.Succeeded)
-        {
-            return toCreate;
         }
-
-        return null;
-
     }
 }

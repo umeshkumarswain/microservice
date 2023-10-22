@@ -1,8 +1,9 @@
 using MediatR;
 
-namespace Authentication.Application.Features.Post.Commands;
-
-public class DeletePost : IRequest
+namespace Authentication.Application.Features.Post.Commands
 {
-    public int PostId { get; set; }
+    public class DeletePost : IRequest
+    {
+        public int PostId { get; set; }
+    }
 }
