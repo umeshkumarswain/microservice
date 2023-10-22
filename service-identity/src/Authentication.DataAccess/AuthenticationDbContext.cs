@@ -1,11 +1,12 @@
 using Authentication.Domain.Models;
+using Authentication.Domain.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Authentication.DataAccess
 {
-    public class AuthenticationDbContext : IdentityDbContext<IdentityUser>
+    public class AuthenticationDbContext : IdentityDbContext<User>
     {
    
 
