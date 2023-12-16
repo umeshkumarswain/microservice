@@ -6,8 +6,6 @@ using Authentication.Domain.Models.User;
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Service.Authentication.Abstractions;
-using Service.Authentication.Validator;
 
 namespace Service.Authentication.Extensions
 {
@@ -33,31 +31,29 @@ namespace Service.Authentication.Extensions
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             
             
-            //Validators
-            builder.Services.AddScoped<IValidator<User>, UserValidator>();
             
             builder.Services.AddMediatR(
                 x => x.RegisterServicesFromAssemblies(typeof(CreatePost).Assembly)
             );
         }
 
-        public static void RegisterEndPointDefinations(this WebApplication app)
-        {
-            var endPointDefinations = typeof(Program).Assembly
-                .GetTypes()
-                .Where(
-                    (type) =>
-                        type.IsAssignableTo(typeof(IEndPointDefinations))
-                        && !type.IsAbstract
-                        && !type.IsInterface
-                )
-                .Select(Activator.CreateInstance)
-                .Cast<IEndPointDefinations>();
+        // public static void RegisterEndPointDefinations(this WebApplication app)
+        // {
+        //     var endPointDefinations = typeof(Program).Assembly
+        //         .GetTypes()
+        //         .Where(
+        //             (type) =>
+        //                 type.IsAssignableTo(typeof(IEndPointDefinations))
+        //                 && !type.IsAbstract
+        //                 && !type.IsInterface
+        //         )
+        //         .Select(Activator.CreateInstance)
+        //         .Cast<IEndPointDefinations>();
 
-            foreach (var endPointDefination in endPointDefinations)
-            {
-                endPointDefination.RegisterEndPoints(app);
-            }
-        }
+        //     foreach (var endPointDefination in endPointDefinations)
+        //     {
+        //         endPointDefination.RegisterEndPoints(app);
+        //     }
+        // }
     }
 }

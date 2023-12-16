@@ -13,6 +13,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.3.0"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Authentication.Application\Authentication.Application.csproj"/>
