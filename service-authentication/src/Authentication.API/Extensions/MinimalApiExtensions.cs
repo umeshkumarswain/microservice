@@ -16,12 +16,18 @@ namespace Service.Authentication.Extensions
         public static void RegisterServices(this WebApplicationBuilder builder)
         {
             var connectionString = builder.Configuration.GetConnectionString("Default");
+            
             builder.Services.AddDbContext<AuthenticationDbContext>(
                 opt => opt.UseSqlServer(connectionString)
             );
-            builder.Services
-                .AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<AuthenticationDbContext>();
+
+            builder.Services.AddAuthorization();
+            builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+                   .AddEntityFrameworkStores<AuthenticationDbContext>();;
+
+            // builder.Services
+            //     .AddIdentity<User, IdentityRole>()
+            //     .AddEntityFrameworkStores<AuthenticationDbContext>();
                 
             builder.Services.AddScoped<IPostRepository, PostRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
