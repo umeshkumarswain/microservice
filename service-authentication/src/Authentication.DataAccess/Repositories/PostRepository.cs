@@ -12,14 +12,14 @@ namespace Authentication.DataAccess.Repositories
         {
             _context = dbContext;
         }
-        public  async Task<ICollection<Post>> GetPosts()
+        public async Task<ICollection<Post>> GetPosts()
         {
             return await _context.Posts.ToListAsync();
         }
 
         public async Task<Post> GetPost(int postId)
         {
-            return await _context.Posts.FirstOrDefaultAsync((post ) => post.Id == postId);
+            return await _context.Posts.FirstOrDefaultAsync((post) => post.Id == postId);
         }
 
         public async Task<Post> CreatePost(Post toCreate)
@@ -31,7 +31,7 @@ namespace Authentication.DataAccess.Repositories
             return toCreate;
         }
 
-        public async  Task<Post> UpdatePost(string updateContent, int postId)
+        public async Task<Post> UpdatePost(string updateContent, int postId)
         {
             var post = _context.Posts.FirstOrDefault((post) => post.Id == postId);
             post.Content = updateContent;

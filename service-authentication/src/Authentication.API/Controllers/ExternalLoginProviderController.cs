@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using Authentication.Application.Features.ExternalProviders.Queries;
+using Authentication.Application.Abstractions;
 namespace Authentication.API.Controllers;
 
 [ApiController]
@@ -8,6 +9,8 @@ namespace Authentication.API.Controllers;
 public class ExternalLoginProviderController : ControllerBase
 {
     private readonly IMediator _mediator;
+
+
 
     public ExternalLoginProviderController(IMediator mediator)
     {
