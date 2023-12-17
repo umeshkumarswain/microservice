@@ -12,13 +12,16 @@ builder.Services.AddDbContext<AuthenticationDbContext>(
     opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
 );
  builder.Services.AddScoped<IPostRepository, PostRepository>();
-  builder.Services.AddScoped<IExternalLoginProviders, ExternalLoginProviderRepository>();
+builder.Services.AddScoped<IExternalLoginProviders, ExternalLoginProviderRepository>();
  builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<CreatePost>());
-
-
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+    {
+        googleOptions.ClientId =    builder?.Configuration["ExternalAuthentication:Google:ClientId"];
+        googleOptions.ClientSecret = builder?.Configuration["ExternalAuthentication:Google:ClientSecret"];
+    });
 builder.Services
     .AddIdentityApiEndpoints<User>()
     .AddEntityFrameworkStores<AuthenticationDbContext>();
