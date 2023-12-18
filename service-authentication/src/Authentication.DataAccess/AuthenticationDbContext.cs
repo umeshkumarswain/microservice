@@ -8,12 +8,10 @@ namespace Authentication.DataAccess
 {
     public class AuthenticationDbContext : IdentityDbContext<User>
     {
-   
+        public AuthenticationDbContext() { }
 
         public AuthenticationDbContext(DbContextOptions<AuthenticationDbContext> options)
             : base(options) { }
-
-   
 
         public DbSet<Post>? Posts { get; set; }
 
